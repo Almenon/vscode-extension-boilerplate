@@ -6,6 +6,8 @@
 
 Adapted from [AREPL-vscode](https://github.com/almenon/arepl-vscode), which was in turn adapted from [live-html-preview](https://github.com/HarshdeepGupta/live-html-preview)
 
+Want more examples? see https://github.com/Microsoft/vscode-extension-samples
+
 ### Developer Setup:
 
 1. Install VSCode (duh) and node, if not already installed
