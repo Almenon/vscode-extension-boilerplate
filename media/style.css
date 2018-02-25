@@ -1,0 +1,11 @@
+/*feel free to overwrite this with your own css*/
+
+p{
+    white-space: pre-wrap; /*https://stackoverflow.com/questions/11423300/new-lines-in-text-within-a-div*/
+    color: #f48771;
+}
+
+/* this color takes precedence when user is using a light-colored theme */
+.vscode-light p{
+    color: #e51400;
+}

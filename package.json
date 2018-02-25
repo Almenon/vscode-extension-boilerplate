@@ -1,0 +1,79 @@
+{
+  "name": "vscode-extension-boilerplate",
+  "displayName": "vscode-extension-boilerplate",
+  "description": "boilerplate project for making your own vscode extension",
+  "version": "0.0.1",
+  "publisher": "almenon",
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "categories": [
+    "Other",
+    "Debuggers"
+  ],
+  "activationEvents": [
+    "onCommand:extension.showPreview"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "vscode-extension-boilerplate configuration",
+      "properties": {
+        "vscode-extension-boilerplate.exampleSetting": {
+          "type": "number",
+          "default": 300,
+          "description": "example setting description"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.showPreview",
+        "title": "show preview",
+        "category": "vscode-extension-boilerplate"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.showPreview",
+        "key": "ctrl+shift+b",
+        "mac": "cmd+shift+b",
+        "when": "!terminalFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.5",
+    "mocha": "^5.0.0",
+    "typescript": "^2.7.1",
+    "vscode": "^1.1.10"
+  },
+  "dependencies": {
+    "opn": "^5.2.0",
+    "path": "^0.12.7"
+  },
+  "bugs": {
+    "url": "https://github.com/almenon/vscode-extension-boilerplate-vscode-wordcount/issues",
+    "email": "almenon214@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/almenon/vscode-extension-boilerplate-vscode.git"
+  },
+  "license": "SEE LICENSE IN <filename>",
+  "keywords": [
+    "boilerplate",
+    "starter",
+    "template",
+    "extension",
+    "vscode"
+  ]
+}
