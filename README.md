@@ -1,3 +1,5 @@
+DEPRECATED - use https://github.com/Microsoft/vscode-extension-samples/tree/master/webview-sample instead
+
 ## vscode-extension-boilerplate [![Build Status](https://travis-ci.org/Almenon/vscode-extension-boilerplate-vscode.svg?branch=master)](https://travis-ci.org/Almenon/vscode-extension-boilerplate-vscode)
 
 *very* simple project you can use as a base to create an extension that opens a preview
